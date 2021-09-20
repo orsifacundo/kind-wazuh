@@ -1,0 +1,30 @@
+# three node (two workers) cluster config
+kind: Cluster
+apiVersion: kind.x-k8s.io/v1alpha4
+nodes:
+- role: control-plane
+- role: worker
+- role: worker
+#  extraPortMappings:
+#  - containerPort: 443
+#    hostPort: 8443
+#    listenAddress: "0.0.0.0"
+#  - containerPort: 1514
+#    hostPort: 15141
+#    listenAddress: "127.0.0.1"
+#  - containerPort: 1515
+#    hostPort: 15151
+#    listenAddress: "127.0.0.1"
+#- role: worker
+#  extraPortMappings:
+#  - containerPort: 443
+#    hostPort: 443
+#    listenAddress: "0.0.0.0"
+#  - containerPort: 1514
+#    hostPort: 1514
+#    listenAddress: "0.0.0.0"
+#  - containerPort: 1515
+#    hostPort: 1515
+#    listenAddress: "0.0.0.0"
+
+
