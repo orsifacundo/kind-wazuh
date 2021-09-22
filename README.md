@@ -98,6 +98,10 @@ For `Wazuh` and `nginx` self-signed certificates are provided for testing purpos
 
   **<EXTERNAL-IP_WAZUH_SERVICE>** = `wazuh` LB service EXTERNAL-IP
 
+- Copy the `nginx/nginx.conf` file and certificates into the appropriate path:
+
+ `mkdir /etc/nginx/certs && cp nginx/nginx.conf /etc/nginx/nginx.conf && cp nginx/certs/nginx.* /etc/nginx/certs/`
+
 - Start the `nginx` service:
 
   `systecmtl start nginx`
